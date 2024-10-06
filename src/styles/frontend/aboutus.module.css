@@ -1,0 +1,143 @@
+.breadcrumbs-section-wrapper {
+  position: relative;
+  top: 60%;
+  transform: translateY(-190%);
+  z-index: 2;
+}
+
+.page-heading {
+  position: relative;
+  top: 50%;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
+  width: fit-content;
+  padding: 7px 36px;
+  margin: 0px auto;
+}
+
+@media (max-width: 767px) {
+  .page-heading {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-heading {
+    padding: 20px;
+  }
+}
+
+.page-heading::before,
+.page-heading:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  border: 2px solid #ffffff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page-heading::before {
+  left: 0px;
+  border-right: 0px;
+}
+
+.page-heading:after {
+  right: 0px;
+  border-left: 0px;
+}
+
+.custom-margin {
+  margin-top: 70px;
+}
+
+@media (max-width: 767px) {
+  .custom-margin {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 480px) {
+  .custom-margin {
+    margin-top: 30px;
+  }
+}
+
+.section-heading {
+  text-align: left;
+}
+
+.section-heading {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 44px;
+  color: #0069aa;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .section-heading {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.custom-buttons {
+  margin-top: 40px;
+}
+
+.section-heading p {
+  margin-bottom: 20px;
+}
+
+.about-us-cover-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: sticky;
+  top: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.custom-buttons {
+  width: fit-content;
+}
+
+.custom-buttons button,
+.custom-buttons a {
+  background: rgb(21, 116, 224);
+  padding: 10px 20px;
+  color: #ffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  transition: all 0.5s linear;
+  border: none;
+  display: block;
+  text-align: center;
+  font-family: "Lora", serif;
+  width: fit-content;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.custom-buttons button:hover,
+.custom-buttons a:hover {
+  background: Green;
+}

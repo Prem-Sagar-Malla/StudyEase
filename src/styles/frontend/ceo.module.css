@@ -1,0 +1,88 @@
+.custom-margin {
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .custom-margin {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 480px) {
+  .custom-margin {
+    margin-top: 30px;
+  }
+}
+
+.message-from-ceo {
+  display: flex;
+  height: fit-content;
+}
+
+.wrapper {
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+.ceo-cover {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .ceo-cover {
+    width: 100%;
+  }
+}
+
+.ceo-message-card {
+  background: #faecbb;
+  border: 1px solid #e0d4d4;
+  padding: 60px 35px 35px 35px;
+  position: relative;
+  height: 50%;
+}
+
+@media (max-width: 991px) {
+  .ceo-message-card {
+    width: 100%;
+  }
+}
+
+.intro {
+  font-family: "Lora", serif;
+  margin-bottom: 30px;
+}
+
+.heading {
+  display: block;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #d91600;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.name {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 131%;
+  color: #0a82cf;
+}
+
+@media (max-width: 767px) {
+  .name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

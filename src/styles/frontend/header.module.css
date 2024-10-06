@@ -1,0 +1,64 @@
+/* Sidebar Media Responsive CSS */
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+  }
+}
+
+/* Logo CSS Section */
+.navLogo {
+  width: 70px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.siteName {
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.sidebarLogo {
+  border-radius: 10px;
+  width: 62px;
+}
+
+/* Navbar CSS Section */
+.navLink:hover {
+  color: #ffff;
+  text-decoration: none;
+  padding: 7px 0;
+  border-bottom: 4px solid #04aa6d;
+}
+
+@media (max-width: 1200px) {
+  .navItem {
+    font-size: 16px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+}
+
+.offCanvas {
+  background-color: #0069aa;
+}
+
+.searchInput {
+  background-color: transparent;
+  color: #ffff;
+  border: 1px solid #ffff;
+}
+
+.searchInput::placeholder {
+  color: white !important;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #0069aa;
+  z-index: 99;
+}

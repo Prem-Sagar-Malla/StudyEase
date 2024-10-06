@@ -1,0 +1,59 @@
+.social-media {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .social-media {
+    display: none;
+  }
+}
+
+.social-media ul li {
+  display: block;
+  padding-top: 20px;
+}
+
+.social-media ul li:first-child {
+  padding-top: 0px;
+}
+
+.social-media ul li a {
+  display: flex;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  color: #0069aa;
+  background: white;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-media ul li a:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.social-media ul li .facebook:hover {
+  background: #4867aa;
+}
+
+.social-media ul li .instagram:hover {
+  background: #bc2a8d;
+}
+
+.social-media ul li .twitter:hover {
+  background: #1da1f2;
+}
+
+.social-media ul li .youtube:hover {
+  background: #ff0000;
+}
+
+.social-media ul li .android:hover {
+  background: #3ddc84;
+}

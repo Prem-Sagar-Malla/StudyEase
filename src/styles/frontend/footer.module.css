@@ -1,0 +1,141 @@
+footer {
+  background-color: #0069aa;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.item {
+  flex: 25%;
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  footer .item {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .item {
+    flex: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+
+.h5 {
+  display: block;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: burlywood;
+}
+
+a {
+  background-color: transparent;
+}
+
+/* Footer Social Media CSS */
+.copy-right-social-media-links {
+  padding: 20px 0px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.wrapper span {
+  display: grid;
+  color: #fff;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.wrapper span a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+
+.socialMedia ul li {
+  display: inline-block;
+  padding-right: 17px;
+}
+
+.socialMedia ul li a {
+  display: flex;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  color: #416cad;
+  background: white;
+  border-radius: 50%;
+}
+
+.socialMedia ul li a:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.facebook:hover {
+  background: #4867aa;
+}
+
+.instagram:hover {
+  background: #bc2a8d;
+}
+
+.twitter:hover {
+  background: #1da1f2;
+}
+
+.youtube:hover {
+  background: #ff0000;
+}
+
+.social {
+  display: grid;
+  justify-content: end;
+  align-items: center !important;
+}

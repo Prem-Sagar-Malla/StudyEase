@@ -1,0 +1,153 @@
+.banner {
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #00000057;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: 1;
+}
+
+.banner img {
+  height: 90vh;
+  width: 100%;
+  object-fit: contain;
+  padding-top: 100px;
+}
+
+.banner-contains {
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Banner Text CSS */
+.banner-heading {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120px;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 35%;
+  letter-spacing: 4px;
+}
+
+.cursor {
+  position: relative;
+  width: 24em;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-400%);
+}
+/* Animation */
+.typewriter-animation {
+  animation: typewriter 5s steps(50) 1s 1 normal both,
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkingCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-heading {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.banner .banner-slider .banner-items .banner-contains {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  margin: 0px auto;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .banner .banner-slider .banner-items .banner-contains {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner .banner-slider .banner-items .banner-contains {
+    width: 95%;
+  }
+}
+
+.banner-heading {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .banner-heading {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.banner-text {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 20px 0px 40px 0px;
+}
+
+@media (max-width: 767px) {
+  .banner-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0px 20px 0px;
+  }
+}

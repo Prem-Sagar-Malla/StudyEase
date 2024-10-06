@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  letter-spacing: 1.5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Quote Logo CSS */
+.quote-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* ProgressBar.css */
+.progress-container {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #f3f3f3;
+  z-index: 9999;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  transition: width 0.25s ease-in-out;
+}

@@ -1,0 +1,301 @@
+.breadcrumbs-section-wrapper {
+  position: relative;
+  top: 60%;
+  transform: translateY(-190%);
+  z-index: 2;
+}
+
+.page-heading {
+  position: relative;
+  top: 50%;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
+  width: fit-content;
+  padding: 7px 36px;
+  margin: 0px auto;
+}
+
+@media (max-width: 767px) {
+  .page-heading {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-heading {
+    padding: 20px;
+  }
+}
+
+.page-heading::before,
+.page-heading:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  border: 2px solid #ffffff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page-heading::before {
+  left: 0px;
+  border-right: 0px;
+}
+
+.page-heading:after {
+  right: 0px;
+  border-left: 0px;
+}
+
+.service-section {
+  padding: 70px 0px;
+  background: #e3dddc;
+  position: relative;
+}
+
+.custom-buttons {
+  margin: 60px auto 0px auto;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-wrapper {
+  width: fit-content;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .section-heading {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.button-decor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 767px) {
+  .button-decor {
+    gap: 7px;
+  }
+}
+
+.box {
+  height: 10px;
+  width: 30px;
+  background-color: #d91600;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .box {
+    height: 5px;
+    width: 15px;
+  }
+}
+
+.box:first-child {
+  background: rgba(10, 130, 207, 0.99);
+}
+
+.box:last-child {
+  background-color: #f4a829;
+}
+
+.button-decor::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #d5bcbc;
+  z-index: 1;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.gy-4 {
+  padding-bottom: 1.5rem;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.row > * {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 100px;
+  transition: all 0.5s linear;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.service-cover {
+  margin-top: -110px;
+}
+
+.wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0px auto;
+}
+
+.pic {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.wrapper a {
+  position: absolute;
+  right: -6%;
+  bottom: 10%;
+  text-decoration: none !important;
+  color: white;
+}
+
+.wrapper a .wrapper {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s linear;
+  border: 1px solid white;
+}
+
+.wrapper a .wrapper:hover {
+  background-color: #0069aa;
+}
+
+.service-card .service-cover .wrapper a .wrapper i {
+  color: #fff;
+}
+
+.service-card:hover {
+  background-color: #0069aa;
+}
+
+/* Service Details Hover Section */
+.service-details {
+  margin-top: 10px;
+}
+
+.service-details h3.service-title {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: rgb(25, 222, 113);
+  text-align: center;
+}
+
+.service-details .service-dec p {
+  text-align: center;
+}
+
+/* Service's View All Section Button CSS */
+.custom-buttons {
+  width: fit-content;
+}
+
+.custom-buttons button,
+.custom-buttons a {
+  background: rgb(21, 116, 224);
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  transition: all 0.5s linear;
+  border: none;
+  display: block;
+  text-align: center;
+  font-family: "Lora", serif;
+  width: fit-content;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.custom-buttons button:hover,
+.custom-buttons a:hover {
+  background: Green;
+}
+
+.read {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.11em;
+  text-transform: capitalize;
+  color: #f4a829 !important;
+  gap: 5px;
+}
+
+.read:hover {
+  color: #b03636 !important;
+}
